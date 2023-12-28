@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+</head>
+<body>
+  {{>nav}}
+    <form autocomplete="off">
+        <div class="search">
+            <input type="text" name="counties-name" id="countries-name" placeholder="Please enter country name!">
+            <button type="button" id="submitBtn" class="btn btn2">search</button>
+        </div>
+        
+        <div class="weather-container">
+            <div class="sm-container">
+                <div id="month">jan</div><div class="day">30</div>
+            </div>
+            <div class="lg-container">
+                <div class="c-name">
+                   <p><span class="country-name">Ranjani</span>,<span class="city-name">NP</span></p> 
+                </div>
+                <div class="temp">
+                    <span class="deg">22</span><sup>o</sup><span>celcius</span>
+                    <span class="hidden"><i class="fa-solid fa-cloud" style="color: #0b4caa;"></i></span>
+                    <span class="hidden"><i class="fa-solid fa-cloud-showers-heavy" style="color: #0b4caa;"></i></span>
+                    <span><i class="fa-solid fa-sun" style="color: #e8cc54;"></i></span>
+                    <span class="hidden"><i class="fa-solid fa-cloud-sun" style="color: #0b4caa;"></i></span>
+                </div>
+            </div>
+        </div>
+    </form>
+    <footer>
+        It is made by kripesh mainali for projects
+    </footer>
+
+    {{!-- <script src="js/main.js"></script> --}}
+    <script>
+        const month = document.getElementById("month");
+        const day = document.querySelector(".day");
+
+        const arrMonth = ["jan","feb","mar","apr","may","jun","jul","aug","sept","oct","nov","dec"];
+        const d = new Date();
+        month.innerText = arrMonth[d.getMonth()];
+        day.innerText = d.getDate();
+    
+    </script>
+</body>
+</html>

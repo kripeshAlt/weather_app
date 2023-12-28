@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Kanit:wght@300;400;500;600;700;800&family=Tilt+Prism&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+nav{
+    
+    background-color: rgb(39, 39, 39);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo{
+    text-decoration: none;
+    color: rgb(9, 145, 27);
+    cursor: pointer;
+    font-size: 2.5rem;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    cursor: pointer;
+    padding: 5px;
+    list-style: none;
+}
+nav ul li a{
+    color: wheat;
+    text-decoration: none;
+    
+}
+.body-container{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top:8%;
+}
+.body-container .r-box img{
+    filter: drop-shadow(20px 20px 10px rgb(10, 22, 10));
+    
+}
+.body-container .l-box{
+    height: 65vh;
+    width: 35vw;
+    margin-top: 30px;
+}
+.body-container .l-box img{
+    margin-top: -30px;
+  padding-bottom: 10%;
+  overflow: hidden;
+  height: 110%;
+  margin-left: 30%;
+}
+.body-container .l-box p{
+    margin-bottom: 15px;
+}
+.btn{
+    text-decoration: none;
+    color: wheat;
+    outline: none;
+    padding: 15px 30px;
+    background-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* form */
+form{
+    margin-top: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form .weather-container{
+    margin-top: 5%;
+}
+form .weather-container .sm-container{
+    width: 25vw;
+    background-color: rgb(88, 83, 83);
+    padding: 10px 20px;
+    color: wheat;
+    border: 2px solid rgb(88, 83, 83);
+    outline: hidden;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+form .weather-container .lg-container{
+    width: 25vw;
+    height: 25vh;
+    background-color: rgb(56, 52, 52);
+    padding: 10px;
+    color: wheat;
+    border: 2px solid rgb(56, 52, 52);
+    outline: hidden;
+    border-radius: 2px 2px 2px 20px;
+
+}
+form input[type="text"]{
+    width: 40vw;
+    background-color: rgb(104, 97, 97);
+    padding: 15px;
+    color: wheat;
+    border: 2px solid rgb(104, 97, 97);
+    outline: hidden;
+    border-radius: 2px 20px 20px;
+}
+.btn2{
+    outline: none;
+    position:absolute;
+    left: 63%;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.temp{
+    margin-top: 3vh;
+    font-size: 3vw;
+}
+.hidden{
+    display: none;
+}
+
+/* footer */
+footer{
+    height:50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    margin-top: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
